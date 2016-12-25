@@ -18,6 +18,7 @@
 		E85C1D661E0C164E00FDE9AA /* chat_firebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1D651E0C164E00FDE9AA /* chat_firebaseTests.swift */; };
 		E85C1D711E0C164E00FDE9AA /* chat_firebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1D701E0C164E00FDE9AA /* chat_firebaseUITests.swift */; };
 		E85C1D7F1E0C187000FDE9AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E85C1D7E1E0C187000FDE9AA /* GoogleService-Info.plist */; };
+		E89936601E0DE4B300DBBF09 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E899365F1E0DE4B300DBBF09 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		E85C1D701E0C164E00FDE9AA /* chat_firebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_firebaseUITests.swift; sourceTree = "<group>"; };
 		E85C1D721E0C164E00FDE9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85C1D7E1E0C187000FDE9AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E899365F1E0DE4B300DBBF09 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		ECA27834AFC3BD6F39502DFB /* Pods-chat-firebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-firebaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat-firebaseTests/Pods-chat-firebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				E85C1D501E0C164D00FDE9AA /* AppDelegate.swift */,
 				E85C1D521E0C164D00FDE9AA /* ViewController.swift */,
 				E85C1D541E0C164D00FDE9AA /* Main.storyboard */,
+				E899365F1E0DE4B300DBBF09 /* Login.storyboard */,
 				E85C1D571E0C164D00FDE9AA /* Assets.xcassets */,
 				E85C1D591E0C164D00FDE9AA /* LaunchScreen.storyboard */,
 				E85C1D5C1E0C164D00FDE9AA /* Info.plist */,
@@ -290,6 +293,7 @@
 				E85C1D7F1E0C187000FDE9AA /* GoogleService-Info.plist in Resources */,
 				E85C1D5B1E0C164D00FDE9AA /* LaunchScreen.storyboard in Resources */,
 				E85C1D581E0C164D00FDE9AA /* Assets.xcassets in Resources */,
+				E89936601E0DE4B300DBBF09 /* Login.storyboard in Resources */,
 				E85C1D561E0C164D00FDE9AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		24E80A411EEAE0DD1B43A86C /* [CP] Embed Pods Frameworks */ = {
@@ -383,7 +387,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		94DAF803687758BEC02D9F3F /* [CP] Embed Pods Frameworks */ = {
@@ -428,7 +432,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FB61C963ECCAE1B9BF53E861 /* [CP] Embed Pods Frameworks */ = {
@@ -709,6 +713,7 @@
 				E85C1D771E0C164E00FDE9AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E85C1D781E0C164E00FDE9AA /* Build configuration list for PBXNativeTarget "chat-firebaseTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +722,7 @@
 				E85C1D7A1E0C164E00FDE9AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E85C1D7B1E0C164E00FDE9AA /* Build configuration list for PBXNativeTarget "chat-firebaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +731,7 @@
 				E85C1D7D1E0C164E00FDE9AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

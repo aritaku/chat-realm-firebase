@@ -67,16 +67,16 @@ class ViewController: JSQMessagesViewController {
 
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         self.finishSendingMessage(animated: true)
-        self.sendTextToDb(text: text)
+        self.sendTextToDb(text: text, senderId: self.senderId, name: self.senderDisplayName)
         self.receiveAutoMessage()
     }
     
-    func sendTextToDb(text: String) {
+    func sendTextToDb(text: String, senderId: String, name: String) {
         let rootRef = FIRDatabase.database().reference()
-        let post = ["from": senderId,
-                    "name": senderDisplayName,
-                    "text": text]
         let postRef = rootRef.childByAutoId()
+        let post = ["from": senderId,
+                    "name": name,
+                    "text": text]
         postRef.setValue(post)
     }
     
@@ -111,8 +111,8 @@ class ViewController: JSQMessagesViewController {
     }
     
     func didFinishMessageTimer(sender: Timer) {
-        let message = JSQMessage(senderId: "sherry", displayName: "sherry", text: "元気だして！！頑張って！！")
-        self.messages?.append(message!)
+        let text = "元気だして！！頑張って！！"
+        self.sendTextToDb(text: text, senderId: "gakki-", name: "がっきー")
         self.finishReceivingMessage(animated: true)
     }
 

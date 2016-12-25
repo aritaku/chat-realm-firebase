@@ -2,12 +2,14 @@ platform :ios, '10.2'
 
 target 'chat-firebase' do
   use_frameworks!
-
+  
+  pod 'Alamofire'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'JSQMessagesViewController'
-  pod 'SlackTextViewController'
   pod 'RealmSwift'
+  pod 'SlackTextViewController'
+  pod 'SwiftyJSON'
 
   target 'chat-firebaseTests' do
     inherit! :search_paths
